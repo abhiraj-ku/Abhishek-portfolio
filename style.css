@@ -6,10 +6,16 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dedede;
 }
 
 header {
     background-color: #262626;
+    width: 100vw;
 
 }
 
@@ -132,7 +138,7 @@ a {
 }
 
 .container {
-    background-color: #dedede;
+   
     display: flex;
     /* max-width: 1100px; */
     margin: 25px 40px;
@@ -143,8 +149,9 @@ a {
     /* box-sizing: border-box; */
     padding: 40px 30px;
 }
-.mark{
- 
+
+.mark {
+
     color: black;
 }
 
@@ -157,8 +164,9 @@ a {
     justify-content: center;
     /* width: 50%; */
     flex-wrap: wrap;
-   
+
 }
+
 .subtitle {
     font-family: 2rem;
     font-weight: 700;
@@ -241,19 +249,19 @@ a {
         padding: 15px;
 
         margin: 0;
-        
+
     }
- 
+
 
     .infos {
         justify-content: center;
         align-items: baseline;
     }
 
-    .idea-man {
+    /* .idea-man {
         display: none;
 
-    }
+    } */
 
     h2 {
         font-size: 13px;
@@ -265,11 +273,78 @@ a {
         opacity: 0.8;
         background-color: #244e54;
     }
+    /* .main{
+        flex-direction: column;
+        margin: 0;
+        min-width: 150px; */
+        
+  
+/* /*        
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto; */
+    /* } */ 
+    /* .right{
+        max-width: 200px;
+        margin-top: 50px;
+      
+    } */
+    /* .left {
+        max-width: 200px;
+    } */
+    /* .left img{
+        height: 250px;
+        width: auto;
+    } */
+
 }
-.ruler{
+
+.ruler {
     height: 3px;
     background-color: #10d1ef;
     align-items: center;
     border: none;
 
 }
+main{
+    /* max-width: 1000px; */
+    background-color: white;
+    
+    box-sizing: border-box;
+    margin: 25px 40px;
+    /* padding-top: 120px; */
+
+
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    
+   
+}
+
+.left{
+    flex-basis: 45%;
+    padding-right: 15px;
+padding-left: 15px;
+  
+} 
+ .right{
+
+    flex-basis: 50%;
+   
+    line-height: 1.5;
+}
+.services{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+/* .services .serv{
+    text-align: center;
+} */
