@@ -312,7 +312,7 @@ a {
 
 hr{
     background-color: orangered;
-    width: 10%;
+    width: 50%;
  
     color: orangered;
    
@@ -442,9 +442,16 @@ main {
    text-align: center;
    width: 80vw;
    margin-top: 120px;
-   align-items: center;
-   justify-content:center;
+   align-items: center; 
+   justify-content:space-between;
+    /* background-color: #fcf001;  */
+      background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+      padding: 30px;
+      border-radius: 10px;
    
+}
+.Education h1{
+    padding-bottom: 10px;
 }
 .clg ,
 .school-12,
@@ -452,7 +459,8 @@ main {
     display: flex;
     align-items: center;
     gap: 5px;
-    border: 1px solid greenyellow;
+    /* border: 1px solid greenyellow; */
+    border-radius: 10px;
     padding: 20px;
     margin: 10px;
     line-height: 1.7;
