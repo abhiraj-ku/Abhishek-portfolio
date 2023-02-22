@@ -344,10 +344,46 @@ padding-left: 15px;
 .right h1{
     font-size: 3re;
 }
-.fa-brands{
-    color: #0E76A8;
+.social-links{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 20px;
     padding: 10px;
+   
+    
 }
+.social-links a{
+    color: black;
+}
+.fa-brands , .fa-regular{
+   
+    
+
+    /* border: 1px solid brown; */
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 30px;
+    
+  
+}
+
+.fa-regular:hover{
+    color: rgb(208, 25, 25);
+}
+.fa-linkedin:hover{
+    color: #0E76A8;
+}
+.fa-twitter:hover{
+    color:#084461;
+}
+.fa-instagram:hover{
+    color:#da0eae;
+}
+.fa-github:hover{
+    color:#0a0a0a;
+}
+
 .linkedin {
 	  background: #0E76A8;
 	  border-radius: 10px;
