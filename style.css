@@ -484,7 +484,14 @@ main {
 
 .skills-section h2 {
     font-size: 50px;
+    margin-bottom: 20px;
 }
 .fontend-tech{
     padding: 5px;
+}
+.projects-section{
+    margin-top: 120px;;
+}
+.projects-section h2 {
+    font-size: 50px;
 }
