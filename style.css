@@ -302,7 +302,8 @@ a {
     } */
 
 }
-.ruler{
+
+.ruler {
     color: #da0eae;
     width: 80%;
     height: 4px;
@@ -310,12 +311,12 @@ a {
     border-radius: 10px;
 }
 
-hr{
+hr {
     background-color: orangered;
     width: 50%;
- 
+
     color: orangered;
-   
+
 }
 
 main {
@@ -356,7 +357,7 @@ main {
 
 .right h1 {
     font-size: 3rem;
-    padding: 10px ;
+    padding: 10px;
 }
 
 .social-links {
@@ -436,26 +437,29 @@ main {
 /* .services .serv{
     text-align: center;
 } */
-.Education{
+.Education {
     display: flex;
     flex-direction: column;
-   text-align: center;
-   width: 80vw;
-   margin-top: 120px;
-   align-items: center; 
-   justify-content:space-between;
+    text-align: center;
+    width: 80vw;
+    margin-top: 120px;
+    align-items: center;
+    justify-content: space-between;
     /* background-color: #fcf001;  */
-      background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-      padding: 30px;
-      border-radius: 10px;
-   
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px 3px rgb(26, 25, 25);
+
 }
-.Education h1{
-    padding-bottom: 10px;
+
+.Education h1 {
+   margin: 20px ;
 }
-.clg ,
+
+.clg,
 .school-12,
-.school-10{
+.school-10 {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -466,4 +470,21 @@ main {
     line-height: 1.7;
     background-color: white;
     box-shadow: 4px 0 5px 3px orangered;
+}
+
+.skills-section {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    /* width: 90vw */
+
+}
+
+.skills-section h2 {
+    font-size: 50px;
+}
+.fontend-tech{
+    padding: 5px;
 }
