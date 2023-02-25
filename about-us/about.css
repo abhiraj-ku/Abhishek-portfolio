@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background-color: #262626;
+    width: 100vw;
+
+}
+
+li {
+    list-style: none;
+    transition: all 0.3 ease-in;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.nav-links {
+    display: inline-block;
+    position: relative;
+    color: white;
+
+}
+
+.nav-links:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: orangered;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-links:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-links {
+    transition: 0.3s ease;
+}
+
+/* .nav-links:hover {
+    color: dodgerblue;
+} */
+
+.Hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white
+}
+
+@media(max-width:768px) {
+    .Hamburger {
+        display: block;
+        z-index: 1;
+
+    }
+
+    .Hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .Hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .Hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease;
+        background-color: #262626;
+        opacity: .7
+
+    }
+
+    .nav-items {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+}
+
+.empty{
+    background-color: aquamarine;
+    height: 30vh;
+    position: relative;
+    z-index: -1;
+}
+.title{
+    position: absolute; 
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  width: 300px; 
+  bottom: -9%;
+  border: 1px solid black;
+  padding: auto 80px;
+  font-size: 40px;
+  text-align: center;
+  background-color: wheat;
+  border-radius: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 4px 5px 3px black;
+ 
+}

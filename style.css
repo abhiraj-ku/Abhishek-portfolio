@@ -591,6 +591,7 @@ main {
     align-items: center;
     padding: 2rem;
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    margin-top: 100px;
   }
   
   .foot a {
