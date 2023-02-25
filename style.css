@@ -3,6 +3,19 @@
     margin: 0;
     box-sizing: border-box;
 }
+.button{
+    padding: 11px;
+    font-size: 15px;
+    background-color: #62bdfc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 15px;
+    
+}
+.button:hover{
+    background-color: cornflowerblue;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
