@@ -3,22 +3,23 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/* color variable for toggle theme */
 :root {
     --primary-color: #dedede;
     --secondary-color: #262626;
     
 }
-::selection{
-    background-color:  #d5f908;
-}
+/* toggle theme css to be used in js */
 .dark-theme{
     --primary-color:#262626;
     --secondary-color:#f1eded;
       transition: 0.3s ease-in-out;
 
 }
-
+/* text selection color on whole site */
+::selection{
+    background-color:  #d5f908;
+}
 
 /* body is made flex so that everything is in center */
 body {
@@ -82,6 +83,7 @@ li {
 .fa-briefcase,
 .fa-address-book{
     padding-right: 10px;
+    text-align: center;
 
 }
 .act:hover{
@@ -650,8 +652,7 @@ main {
 .text p {
     padding: 10px;
 }
-
-
+/* contact us section */
 
 /* footer */
 .foot {

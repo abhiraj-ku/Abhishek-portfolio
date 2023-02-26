@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins:ital,wght@0,400;0,500;1,400&family=Rubik&family=Rubik+Distressed&family=Rubik+Microbe&family=Silkscreen&display=swap');
+
+body{
+    background-color: #dedede;
+    font-family: "poppins";
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* header starts here */
+header {
+    background-color: var(--secondary-color);
+    width: 100vw;
+
+}
+/* first class after header */
+.navbar {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+/* title logo of the site */
+.nav-branding {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+/* navigation menu ul tag */
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+}
+/* li tags */
+li {
+    list-style: none;
+    transition: all 0.3 ease-in;
+}
+/* css class for li tags */
+.nav-links {
+    display: inline-block;
+    position: relative;
+    color: var(--primary-color);
+
+}
+/* nav links icons fontawesome */
+.act{
+    background-color: #3DD1E7;
+    padding: 10px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.fa-house,
+.fa-address-card,
+.fa-school,
+.fa-briefcase,
+.fa-address-book{
+    padding-right: 10px;
+    text-align: center;
+
+}
+.act:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.act1:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.act2:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.act3:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.act4:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+    text-transform: uppercase;
+
+}
+
+/* nav links(li) ends here */
+
+/* anchor tags for li links */
+a {
+    color: white;
+    text-decoration: none;
+
+}
+/* sun and moon icons css */
+#icon {
+    width: 30px;
+    cursor: pointer;
+   
+}
+/* hamburger menu icon and css */
+.Hamburger {
+    display: none;
+    cursor: pointer;
+}
+/* span tag class for three bar lines of hamburger */
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+/* media query for hamburger and responsive navbar  */
+@media(max-width:768px) {
+    .Hamburger {
+        display: block;
+
+    }
+
+    .Hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .Hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .Hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s ease;
+        background-color: var(--secondary-color);
+
+    }
+
+    .nav-items {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+}
+.main{
+    position: relative;
+
+}
+.main h1{
+    position: absolute;
+    top: 10px;
+    right: 100px;
+    left: 100px;
+    text-align: center;
+    font-size: 22px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    /* min-width: 1000px; */
+    
+}
+.form{
+    
+    border-radius: 12px;
+    background:linear-gradient(to left,#01d28e 30%, #3DD1E7 60%);
+    margin: 30px;
+    padding: 80px;
+}
+.headline h1{
+    text-align: center;
+}
+
+/* .form {
+    flex-wrap: wrap;
+
+} */
+
+.left {
+    flex-basis: 30%;
+    /* justify-content: right; */
+    max-width: 500px;
+    background: #01d28e !important;
+    padding: 25px;
+    box-shadow: 0 10px 15px rgb(3, 3, 3);
+}
+
+.right {
+    flex-basis: 40%;
+    max-width: 400px;
+    /* justify-content: right; */
+    background: #faf200 !important;
+    padding: 15px;
+    box-shadow: 0 10px 15px rgb(3, 3, 3);
+
+}
+@media(max-width:768px){
+    .container{
+        flex-direction: column;
+        padding: 10px;
+        align-items: left;
+        
+    }
+    .left{
+      width: 300px;
+      margin-left: 50px;
+      margin-top: 70px;
+    }
+    .right{
+        width: 300px;
+        margin-left: 50px;
+    }
+    .wid{
+        width: 30%;
+    }
+    .container  h3{
+        /* width: 120px; */
+        font-size: 12px;
+    }
+}
+
+.know-us {
+    color: white;
+    font-size: 3rem;
+    font-family: arial;
+
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.location,
+.github,
+.email,
+.phone,
+.linkedin {
+    display: flex;
+    align-items: baseline;
+    /* padding: 5px; */
+    justify-items: baseline;
+    gap: 1rem;
+}
+
+.top-text {
+    width: auto;
+}
+
+.know-us {
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+.fa-location-dot,
+.fa-github,
+.fa-envelope,
+.fa-phone,
+.fa-linkedin-in {
+    border: 2px solid rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 100%;
+}
+
+/* form css here */
+
+.wid {
+    border: none;
+    border-bottom: 2px solid black;
+    width: 70%;
+    font-size: 22px;
+}
+
+.wid:active {
+    border: none;
+}
+
+.pla {
+    font-size: 20px;
+}
+
+.sub-btn {
+    padding: 8px 12px;
+    font-size: 19px;
+    font-family: "poppins";
+}
