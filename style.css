@@ -3,53 +3,68 @@
     margin: 0;
     box-sizing: border-box;
 }
-.button{
-    padding: 11px;
-    font-size: 15px;
-    background-color: #62bdfc;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 700;
-    margin-top: 15px;
+
+:root {
+    --primary-color: #dedede;
+    --secondary-color: #262626;
     
 }
-.button:hover{
-    background-color: cornflowerblue;
+.dark-theme{
+    --primary-color:#262626;
+    --secondary-color:#f1eded;
+
 }
 
+
+/* body is made flex so that everything is in center */
 body {
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #dedede;
+    background-color: var(--primary-color);
+    scroll-behavior: smooth;
 }
-
+/* header starts here */
 header {
-    background-color: #262626;
+    background-color: var(--secondary-color);
     width: 100vw;
 
 }
+/* first class after header */
+.navbar {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+/* title logo of the site */
+.nav-branding {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+/* navigation menu ul tag */
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 
+}
+/* li tags */
 li {
     list-style: none;
     transition: all 0.3 ease-in;
 }
-
-a {
-    color: white;
-    text-decoration: none;
-
-}
-
+/* css class for li tags */
 .nav-links {
     display: inline-block;
     position: relative;
-    color: white;
+    color: var(--primary-color);
 
 }
-
 .nav-links:after {
     content: '';
     position: absolute;
@@ -68,47 +83,38 @@ a {
     transform-origin: bottom left;
 }
 
-.navbar {
-    display: flex;
-    min-height: 70px;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 24px;
-}
-
-.nav-menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
-
-.nav-branding {
-    font-size: 2rem;
-}
-
 .nav-links {
     transition: 0.3s ease;
 }
+/* nav links(li) ends here */
 
-/* .nav-links:hover {
-    color: dodgerblue;
-} */
+/* anchor tags for li links */
+a {
+    color: white;
+    text-decoration: none;
 
+}
+/* sun and moon icons css */
+#icon {
+    width: 30px;
+    cursor: pointer;
+   
+}
+/* hamburger menu icon and css */
 .Hamburger {
     display: none;
     cursor: pointer;
 }
-
+/* span tag class for three bar lines of hamburger */
 .bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: white
+    background-color: white;
 }
-
+/* media query for hamburger and responsive navbar  */
 @media(max-width:768px) {
     .Hamburger {
         display: block;
@@ -136,7 +142,7 @@ a {
         width: 100%;
         text-align: center;
         transition: 0.3s ease;
-        background-color: #262626;
+        background-color: var(--secondary-color);
 
     }
 
@@ -150,6 +156,8 @@ a {
 
 }
 
+/* main section starts & nav Ends here */
+
 .container {
 
     display: flex;
@@ -162,14 +170,12 @@ a {
     /* box-sizing: border-box; */
     padding: 40px 30px;
 }
-
+/* marquee tag class */
 .mark {
 
-    color: black;
+    color: var(--secondary-color);
 }
-
-
-
+/* info section title and subtitle buttons */
 .infos {
     display: flex;
     flex-direction: column;
@@ -179,16 +185,35 @@ a {
     flex-wrap: wrap;
 
 }
-
+/* my name  */
+.title {
+    font-size: 72px;
+    opacity: 0.8;
+    color: var(--secondary-color);
+}
+/* what i do */
 .subtitle {
     font-family: 2rem;
     font-weight: 700;
     margin-top: 10px;
+    color: var(--secondary-color);
 }
+.container h2{
+    color: var(--secondary-color);
+}
+/* two buttons of hire me and download cv */
+.button {
+    padding: 11px;
+    font-size: 15px;
+    background-color: #62bdfc;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+    margin-top: 15px;
 
-.title {
-    font-size: 72px;
-    opacity: 0.8;
+}
+.button:hover {
+    background-color: cornflowerblue;
 }
 
 .buttons {
@@ -197,18 +222,18 @@ a {
     gap: 50px;
 }
 
-/* CSS */
+/* btn is the class of the two buttons*/
 .btn {
     background-color: #3DD1E7;
     border: 0 solid #E5E7EB;
-    color: #000000;
+    color: var(--secondary-color);
     font-size: 1rem;
     font-weight: 700;
     justify-content: center;
     line-height: 1.75rem;
     padding: .75rem 1.65rem;
     text-align: center;
-    text-decoration: none #000000 solid;
+    /* text-decoration: none #000000 solid; */
     cursor: pointer;
     transform: rotate(-2deg);
 }
@@ -221,7 +246,7 @@ a {
 .btn:after {
     content: '';
     position: absolute;
-    border: 1px solid #000000;
+    border: 1px solid var(--secondary-color);
     bottom: 4px;
     left: 4px;
     width: calc(100% - 1px);
@@ -232,6 +257,7 @@ a {
     bottom: 2px;
     left: 2px;
 }
+/* media query for container responsiveness */
 
 @media (max-width: 768px) {
     .btn {
@@ -272,11 +298,6 @@ a {
         align-items: baseline;
     }
 
-    /* .idea-man {
-        display: none;
-
-    } */
-
     h2 {
         font-size: 13px;
         line-height: 1.5;
@@ -287,32 +308,11 @@ a {
         opacity: 0.8;
         background-color: #244e54;
     }
-
-    /* .main{
-        flex-direction: column;
-        margin: 0;
-        min-width: 150px; */
-
-
-    /* /*        
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto; */
-    /* } */
     .right {
         max-width: 200px;
         margin-top: 50px;
 
     }
-
-    /* .left {
-        max-width: 200px;
-    } */
-    /* .left img{
-        height: 250px;
-        width: auto;
-    } */
 
 }
 
@@ -331,6 +331,7 @@ hr {
     color: orangered;
 
 }
+/* main section about me starts here */
 
 main {
     width: 80vw;
@@ -352,27 +353,28 @@ main {
 
 
 }
-
+/* left section with profil img */
 .left {
     flex-basis: 45%;
     padding-right: 15px;
     padding-left: 15px;
 
 }
+/* right section with brief summary */
 
 .right {
 
     flex-basis: 50%;
 
     line-height: 1.5;
-    /* color: white; */
+    color: var(--secondary-color);
 }
 
 .right h1 {
     font-size: 3rem;
     padding: 10px;
 }
-
+/* social links icons  */
 .social-links {
     display: flex;
     align-items: center;
@@ -385,7 +387,7 @@ main {
 }
 
 .social-links a {
-    color: black;
+    color: var(--secondary-color);
 }
 
 .fa-brands,
@@ -406,11 +408,11 @@ main {
 }
 
 .fa-linkedin:hover {
-    color: #0E76A8;
+    color: #0077b5;
 }
 
 .fa-twitter:hover {
-    color: #084461;
+    color: #00acee;
 }
 
 .fa-instagram:hover {
@@ -421,7 +423,7 @@ main {
     color: #0a0a0a;
 }
 
-.linkedin {
+/* .linkedin {
     background: #0E76A8;
     border-radius: 10px;
     color: #fff;
@@ -430,26 +432,25 @@ main {
     padding: 12px;
     margin-top: 25px;
     ;
-}
+} */
 
-/* .right a{
-      
-    } */
 .profile-pic {
     border-radius: 20px;
 }
 
-.services {
+/* .services {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
-}
+} */
 
 /* .services .serv{
     text-align: center;
 } */
+
+/* education section starts here */
 .Education {
     display: flex;
     flex-direction: column;
@@ -462,12 +463,12 @@ main {
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 5px 3px rgb(26, 25, 25);
+    box-shadow: 0 5px 5px 3px var(--secondary-color);
 
 }
 
 .Education h1 {
-   margin: 20px ;
+    margin: 20px;
 }
 
 .clg,
@@ -485,6 +486,7 @@ main {
     box-shadow: 4px 0 5px 3px orangered;
 }
 
+/* skills section starts here */
 .skills-section {
     margin-top: 100px;
     display: flex;
@@ -494,77 +496,90 @@ main {
     /* width: 90vw */
 
 }
+.skills-section h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+.skills-section h3 {
+   
+    color: var(--secondary-color);
+}
+
+.fontend-tech {
+    padding: 5px;
+}
+
+/* sill meter card */
 .card {
     width: 300px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-  .header {
+}
+
+.skill-text {
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
     font-size: 18px;
-  }
-  
-  .body {
+}
+
+.area {
     padding: 20px;
-  }
-  
-  .skill {
+}
+
+.skill {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
-  
-  .skill-name {
+}
+
+.skill-name {
     width: 120px;
     font-size: 16px;
-  }
-  
-  .skill-level {
+}
+
+.skill-level {
     width: 160px;
     height: 10px;
     background-color: #eee;
     border-radius: 10px;
     overflow: hidden;
     margin-left: 20px;
-  }
-  
-  .skill-percent {
+}
+
+.skill-percent {
     background-color: #333;
     height: 100%;
-  }
-  
-  .skill-percent-number {
+}
+
+.skill-percent-number {
     margin-left: 20px;
     font-size: 16px;
-  }
-  
+}
 
-.skills-section h2 {
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-.fontend-tech{
-    padding: 5px;
-}
-.projects-section{
+
+/* projects section starts here */
+.projects-section {
     margin-top: 120px;
     text-align: center;
 }
+
 .projects-section h2 {
     font-size: 50px;
     text-decoration: underline;
     color: #7f06e9;
-   
+
 }
-.projects-section h5{
+
+.projects-section h5 {
     padding: 25px;
+    color: var(--secondary-color);
 }
+/* skill section cards */
 .section {
     display: flex;
     justify-content: center;
@@ -572,26 +587,21 @@ main {
     align-items: center;
     justify-items: center;
     gap: 1.5rem;
-    
-}
 
-.text h3{
+}
+.text{
+    color: var(--secondary-color);
+
+}
+.text h3 {
     padding: 15px;
 }
-.text p{
+
+.text p {
     padding: 10px;
 }
-/* .coding,
-.mental-health,
-.studying,
-.travelling {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1.1rem;
 
-} */
+
 
 /* footer */
 .foot {
@@ -605,44 +615,45 @@ main {
     padding: 2rem;
     background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
     margin-top: 100px;
-  }
-  
-  .foot a {
+}
+
+.foot a {
     color: #737373;
-  }
-  
-  .foot a:hover {
+}
+
+.foot a:hover {
     color: #bfbfbf;
     text-decoration: none;
     transition: all 0.3s linear;
-  }
-  
-  .icons {
+}
+/* footer social icons */
+.icons {
     padding: 1rem;
-  }
-  
-  .icons i {
+}
+
+.icons i {
     width: 40px;
     height: 40px;
     line-height: 40px;
     margin-left: 6px;
     border-radius: 100%;
-    
-    color: black;
+
+    color: var(--secondary-color);
     display: inline-block;
     text-align: center;
     transition: all 0.2s linear;
-  }
-  @media only screen and(max-width:400px){
-    footer {
-        position: relative;
-        bottom: 0;
-      }
-  }
-  @media (max-width: 807px) {
+}
+
+/* @media only screen and(max-width:400px) {
     footer {
         position: relative;
         bottom: 0;
     }
 }
- 
+
+@media (max-width: 807px) {
+    footer {
+        position: relative;
+        bottom: 0;
+    }
+} */
