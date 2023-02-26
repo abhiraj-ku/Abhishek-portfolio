@@ -70,7 +70,52 @@ li {
     color: var(--primary-color);
 
 }
-.nav-links:after {
+/* nav links icons fontawesome */
+.act{
+    background-color: #3DD1E7;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+.fa-house,
+.fa-address-card,
+.fa-school,
+.fa-briefcase,
+.fa-address-book{
+    padding-right: 10px;
+
+}
+.act:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+.act1:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+.act2:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+.act3:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+.act4:hover{
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+
+}
+/* .nav-links:after {
     content: '';
     position: absolute;
     width: 100%;
@@ -90,7 +135,7 @@ li {
 
 .nav-links {
     transition: 0.3s ease;
-}
+} */
 /* nav links(li) ends here */
 
 /* anchor tags for li links */
