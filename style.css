@@ -12,6 +12,7 @@
 .dark-theme{
     --primary-color:#262626;
     --secondary-color:#f1eded;
+      transition: 0.3s ease-in-out;
 
 }
 
