@@ -8,6 +8,9 @@
     --secondary-color: #262626;
     
 }
+::selection{
+    background-color:  #d5f908;
+}
 .dark-theme{
     --primary-color:#262626;
     --secondary-color:#f1eded;
