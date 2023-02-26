@@ -3,6 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+    --primary-color: #dedede;
+    --secondary-color: #262626;
+    
+}
+.dark-theme{
+    --primary-color:#262626;
+    --secondary-color:#f1eded;
+      transition: 0.3s ease-in-out;
+
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+   
+}
 header {
     background-color: #262626;
     width: 100vw;
