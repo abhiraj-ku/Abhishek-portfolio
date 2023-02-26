@@ -10,7 +10,7 @@
     
 }
 ::selection{
-    background-color:  #45df45;
+    background-color:  #d5f908;
 }
 .dark-theme{
     --primary-color:#262626;
@@ -29,6 +29,7 @@ body {
     flex-direction: column;
     background-color: var(--primary-color);
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 /* header starts here */
 header {
