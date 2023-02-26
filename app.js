@@ -24,3 +24,8 @@ icon.onclick = function() {
     }
     
 }
+
+document.addEventListener('contextmenu', function(e) {
+    alert("Inspect Element is Blocked on This Site")
+    e.preventDefault();
+  });

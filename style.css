@@ -9,6 +9,9 @@
     --secondary-color: #262626;
     
 }
+::selection{
+    background-color:  #45df45;
+}
 .dark-theme{
     --primary-color:#262626;
     --secondary-color:#f1eded;
