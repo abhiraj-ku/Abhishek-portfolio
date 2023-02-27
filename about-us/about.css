@@ -3,115 +3,47 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+/* color variable for toggle theme */
 :root {
     --primary-color: #dedede;
     --secondary-color: #262626;
-    
-}
-::selection{
-    background-color:  #d5f908;
-}
-.dark-theme{
-    --primary-color:#262626;
-    --secondary-color:#f1eded;
-      transition: 0.3s ease-in-out;
 
 }
-body{
+
+/* toggle theme css to be used in js */
+.dark-theme {
+    --primary-color: #262626;
+    --secondary-color: #f1eded;
+    transition: 0.3s ease-in-out;
+
+}
+
+/* text selection color on whole site */
+::selection {
+    background-color: #d5f908;
+}
+
+/* body is made flex so that everything is in center */
+body {
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
-#icon {
-    width: 30px;
-    cursor: pointer;
-   
-}
+
+/* header starts here */
 header {
-    background-color: #262626;
+    background-color: var(--secondary-color);
     width: 100vw;
 
 }
-.act{
-    background-color: #3DD1E7;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.fa-house,
-.fa-address-card,
-.fa-school,
-.fa-briefcase,
-.fa-address-book{
-    padding-right: 10px;
-    text-align: center;
 
-}
-.act:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.act1:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.act2:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.act3:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.act4:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-
-}
-
-li {
-    list-style: none;
-    transition: all 0.3 ease-in;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-
-}
-
-.nav-links {
-    display: inline-block;
-    position: relative;
-    color: white;
-
-}
-
-/* .nav-links:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: orangered;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
-}
-
-.nav-links:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-} */
-
+/* first class after header */
 .navbar {
     display: flex;
     min-height: 70px;
@@ -120,43 +52,100 @@ a {
     padding: 0 24px;
 }
 
+/* title logo of the site */
+.nav-branding {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+
+/* navigation menu ul tag */
 .nav-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
+
 }
 
-.nav-branding {
-    font-size: 2rem;
+/* li tags */
+li {
+    list-style: none;
+    transition: all 0.3 ease-in;
 }
 
+/* css class for li tags */
 .nav-links {
-    transition: 0.3s ease;
+    display: inline-block;
+    position: relative;
+    color: var(--primary-color);
+
 }
 
-/* .nav-links:hover {
-    color: dodgerblue;
-} */
+/* nav links icons fontawesome */
+.act {
+    background-color: #3DD1E7;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
 
+.fa-house,
+.fa-address-card,
+.fa-school,
+.fa-briefcase,
+.fa-address-book {
+    padding-right: 10px;
+    text-align: center;
+
+}
+
+/* hover elements for nav menu */
+.act:hover,
+.act1:hover,
+.act2:hover,
+.act3:hover,
+.act4:hover {
+    background-color: #da0eae;
+    transition: 0.3s ease;
+    padding: 10px 12px;
+    border-radius: 15px;
+}
+
+/* nav links(li) ends here */
+
+/* anchor tags for li links */
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+/* sun and moon icons css */
+#icon {
+    width: 30px;
+    cursor: pointer;
+
+}
+
+/* hamburger menu icon and css */
 .Hamburger {
     display: none;
     cursor: pointer;
 }
 
+/* span tag class for three bar lines of hamburger */
 .bar {
     display: block;
     width: 25px;
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-    background-color: white
+    background-color: white;
 }
 
+/* media query for hamburger and responsive navbar  */
 @media(max-width:768px) {
     .Hamburger {
         display: block;
-        z-index: 1;
 
     }
 
@@ -181,8 +170,7 @@ a {
         width: 100%;
         text-align: center;
         transition: 0.3s ease;
-        background-color: #262626;
-        opacity: .7
+        background-color: var(--secondary-color);
 
     }
 
@@ -194,29 +182,4 @@ a {
         left: 0;
     }
 
-}
-
-.empty{
-    background-color: aquamarine;
-    height: 30vh;
-    position: relative;
-    z-index: -1;
-}
-.title{
-    position: absolute; 
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
-  width: 300px; 
-  bottom: -9%;
-  border: 1px solid black;
-  padding: auto 80px;
-  font-size: 40px;
-  text-align: center;
-  background-color: wheat;
-  border-radius: 12px;
-  font-family: Arial, Helvetica, sans-serif;
-  box-shadow: 0 4px 5px 3px black;
- 
 }

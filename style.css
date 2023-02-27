@@ -3,22 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 /* color variable for toggle theme */
 :root {
     --primary-color: #dedede;
     --secondary-color: #262626;
-    
-}
-/* toggle theme css to be used in js */
-.dark-theme{
-    --primary-color:#262626;
-    --secondary-color:#f1eded;
-      transition: 0.3s ease-in-out;
 
 }
+
+/* toggle theme css to be used in js */
+.dark-theme {
+    --primary-color: #262626;
+    --secondary-color: #f1eded;
+    transition: 0.3s ease-in-out;
+
+}
+
 /* text selection color on whole site */
-::selection{
-    background-color:  #d5f908;
+::selection {
+    background-color: #d5f908;
 }
 
 /* body is made flex so that everything is in center */
@@ -32,12 +35,14 @@ body {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 /* header starts here */
 header {
     background-color: var(--secondary-color);
     width: 100vw;
 
 }
+
 /* first class after header */
 .navbar {
     display: flex;
@@ -46,11 +51,13 @@ header {
     align-items: center;
     padding: 0 24px;
 }
+
 /* title logo of the site */
 .nav-branding {
     font-size: 2.5rem;
     color: var(--primary-color);
 }
+
 /* navigation menu ul tag */
 .nav-menu {
     display: flex;
@@ -59,11 +66,13 @@ header {
     gap: 40px;
 
 }
+
 /* li tags */
 li {
     list-style: none;
     transition: all 0.3 ease-in;
 }
+
 /* css class for li tags */
 .nav-links {
     display: inline-block;
@@ -71,73 +80,35 @@ li {
     color: var(--primary-color);
 
 }
+
 /* nav links icons fontawesome */
-.act{
+.act {
     background-color: #3DD1E7;
     padding: 10px 12px;
     border-radius: 15px;
 }
+
 .fa-house,
 .fa-address-card,
 .fa-school,
 .fa-briefcase,
-.fa-address-book{
+.fa-address-book {
     padding-right: 10px;
     text-align: center;
 
 }
-.act:hover{
+/* hover elements for nav menu */
+.act:hover,
+.act1:hover,
+.act2:hover,
+.act3:hover,
+.act4:hover {
     background-color: #da0eae;
     transition: 0.3s ease;
     padding: 10px 12px;
     border-radius: 15px;
-}
-.act1:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.act2:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.act3:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-}
-.act4:hover{
-    background-color: #da0eae;
-    transition: 0.3s ease;
-    padding: 10px 12px;
-    border-radius: 15px;
-
-}
-/* .nav-links:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: orangered;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
 }
 
-.nav-links:hover:after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.nav-links {
-    transition: 0.3s ease;
-} */
 /* nav links(li) ends here */
 
 /* anchor tags for li links */
@@ -146,17 +117,20 @@ a {
     text-decoration: none;
 
 }
+
 /* sun and moon icons css */
 #icon {
     width: 30px;
     cursor: pointer;
-   
+
 }
+
 /* hamburger menu icon and css */
 .Hamburger {
     display: none;
     cursor: pointer;
 }
+
 /* span tag class for three bar lines of hamburger */
 .bar {
     display: block;
@@ -166,6 +140,7 @@ a {
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+
 /* media query for hamburger and responsive navbar  */
 @media(max-width:768px) {
     .Hamburger {
@@ -222,11 +197,13 @@ a {
     /* box-sizing: border-box; */
     padding: 40px 30px;
 }
+
 /* marquee tag class */
 .mark {
 
     color: var(--secondary-color);
 }
+
 /* info section title and subtitle buttons */
 .infos {
     display: flex;
@@ -237,12 +214,14 @@ a {
     flex-wrap: wrap;
 
 }
+
 /* my name  */
 .title {
     font-size: 72px;
     opacity: 0.8;
     color: var(--secondary-color);
 }
+
 /* what i do */
 .subtitle {
     font-family: 2rem;
@@ -250,9 +229,11 @@ a {
     margin-top: 10px;
     color: var(--secondary-color);
 }
-.container h2{
+
+.container h2 {
     color: var(--secondary-color);
 }
+
 /* two buttons of hire me and download cv */
 .button {
     padding: 11px;
@@ -264,6 +245,7 @@ a {
     margin-top: 15px;
 
 }
+
 .button:hover {
     background-color: cornflowerblue;
 }
@@ -309,6 +291,7 @@ a {
     bottom: 2px;
     left: 2px;
 }
+
 /* media query for container responsiveness */
 
 @media (max-width: 768px) {
@@ -360,6 +343,7 @@ a {
         opacity: 0.8;
         background-color: #244e54;
     }
+
     .right {
         max-width: 200px;
         margin-top: 50px;
@@ -383,6 +367,7 @@ hr {
     color: orangered;
 
 }
+
 /* main section about me starts here */
 
 main {
@@ -405,6 +390,7 @@ main {
 
 
 }
+
 /* left section with profil img */
 .left {
     flex-basis: 45%;
@@ -412,6 +398,7 @@ main {
     padding-left: 15px;
 
 }
+
 /* right section with brief summary */
 
 .right {
@@ -426,6 +413,7 @@ main {
     font-size: 3rem;
     padding: 10px;
 }
+
 /* social links icons  */
 .social-links {
     display: flex;
@@ -434,8 +422,6 @@ main {
     gap: 20px;
     padding: 10px;
     margin-top: 25px;
-
-
 }
 
 .social-links a {
@@ -444,15 +430,10 @@ main {
 
 .fa-brands,
 .fa-regular {
-
-
-
     /* border: 1px solid brown; */
     border-radius: 50%;
     cursor: pointer;
     font-size: 30px;
-
-
 }
 
 .fa-regular:hover {
@@ -475,32 +456,9 @@ main {
     color: #0a0a0a;
 }
 
-/* .linkedin {
-    background: #0E76A8;
-    border-radius: 10px;
-    color: #fff;
-    border-style: solid;
-    border-color: #084461;
-    padding: 12px;
-    margin-top: 25px;
-    ;
-} */
-
 .profile-pic {
     border-radius: 20px;
 }
-
-/* .services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-} */
-
-/* .services .serv{
-    text-align: center;
-} */
 
 /* education section starts here */
 .Education {
@@ -548,13 +506,15 @@ main {
     /* width: 90vw */
 
 }
+
 .skills-section h2 {
     font-size: 50px;
     margin-bottom: 20px;
     color: var(--secondary-color);
 }
+
 .skills-section h3 {
-   
+
     color: var(--secondary-color);
 }
 
@@ -631,6 +591,7 @@ main {
     padding: 25px;
     color: var(--secondary-color);
 }
+
 /* skill section cards */
 .section {
     display: flex;
@@ -641,10 +602,12 @@ main {
     gap: 1.5rem;
 
 }
-.text{
+
+.text {
     color: var(--secondary-color);
 
 }
+
 .text h3 {
     padding: 15px;
 }
@@ -652,6 +615,7 @@ main {
 .text p {
     padding: 10px;
 }
+
 /* contact us section */
 
 /* footer */
@@ -677,6 +641,7 @@ main {
     text-decoration: none;
     transition: all 0.3s linear;
 }
+
 /* footer social icons */
 .icons {
     padding: 1rem;
@@ -694,17 +659,3 @@ main {
     text-align: center;
     transition: all 0.2s linear;
 }
-
-/* @media only screen and(max-width:400px) {
-    footer {
-        position: relative;
-        bottom: 0;
-    }
-}
-
-@media (max-width: 807px) {
-    footer {
-        position: relative;
-        bottom: 0;
-    }
-} */
