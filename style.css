@@ -46,7 +46,7 @@ header {
 /* first class after header */
 .navbar {
     display: flex;
-    min-height: 70px;
+    min-height: 75px;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
@@ -54,10 +54,18 @@ header {
 
 /* title logo of the site */
 .nav-branding {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     color: var(--primary-color);
+    font-weight: 700;
 }
-
+span{
+    color:#00fd93;
+    
+    
+}
+/* .kk{
+    color: #ff0084;
+} */
 /* navigation menu ul tag */
 .nav-menu {
     display: flex;
@@ -179,6 +187,9 @@ a {
 
     .nav-menu.active {
         left: 0;
+    }
+    .nav-branding{
+        font-size: 2rem;
     }
 
 }
