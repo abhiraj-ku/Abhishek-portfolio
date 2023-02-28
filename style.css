@@ -148,12 +148,12 @@ a {
 
     }
 
-    .Hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
     .Hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
+    }
+
+    .Hamburger.active .bar:nth-child(2) {
+        opacity: 0;
     }
 
     .Hamburger.active .bar:nth-child(3) {
@@ -390,12 +390,33 @@ main {
 
 
 }
+/* added animation for slide in effect on the brief about us section  */
+@keyframes slideLeft {
+    from {
+        transform:translateX(-600px)
 
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
+@keyframes slideRight {
+    from {
+        transform:translateX(800px)
+
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+}
 /* left section with profil img */
 .left {
     flex-basis: 45%;
     padding-right: 15px;
     padding-left: 15px;
+    animation: slideLeft 1s ease-in 1s 1 normal both;
 
 }
 
@@ -407,6 +428,7 @@ main {
 
     line-height: 1.5;
     color: var(--secondary-color);
+    animation: slideRight 1s ease-in 1s 1 normal both;
 }
 
 .right h1 {
@@ -434,10 +456,18 @@ main {
     border-radius: 50%;
     cursor: pointer;
     font-size: 30px;
+    transition: transform 0.3s ease-in 0.1s;
 }
 
-.fa-regular:hover {
+/* transition property is applied */
+.fa-regular:hover,
+.fa-linkedin:hover,
+.fa-twitter:hover,
+.fa-instagram:hover,
+.fa-github:hover {
     color: rgb(208, 25, 25);
+    transform: scale(1.4) rotateY(45deg);
+
 }
 
 .fa-linkedin:hover {
