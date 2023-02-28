@@ -216,10 +216,23 @@ a {
 }
 
 /* my name  */
+@keyframes bounce{
+    0%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-17px);
+
+    }
+    
+
+}
 .title {
     font-size: 72px;
     opacity: 0.8;
     color: var(--secondary-color);
+    animation: bounce 2s ease-in 1s infinite;
+    transition:transform rotate(360deg);
 }
 
 /* what i do */
@@ -436,6 +449,9 @@ main {
     padding: 10px;
 }
 
+.know{
+    animation: bounce 2s ease-in 1s infinite;
+}
 /* social links icons  */
 .social-links {
     display: flex;
