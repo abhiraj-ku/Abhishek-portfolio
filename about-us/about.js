@@ -24,8 +24,17 @@ icon.onclick = function() {
     }
     
 }
-document.addEventListener("contextmenu",function (e) {
-    alert("Inspect Element is Blocked On This Site")
-    e.preventDefault();
+// document.addEventListener("contextmenu",function (e) {
+//     alert("Inspect Element is Blocked On This Site")
+//     e.preventDefault();
     
+// })
+// faq
+
+let faqs = document.querySelectorAll(".faq")
+faqs.forEach(faq => {    
+    faq.addEventListener("click", () => {
+        faq.classList.toggle("active")      
+    })   
 })
+
