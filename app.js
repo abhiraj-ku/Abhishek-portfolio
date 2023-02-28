@@ -3,10 +3,10 @@ const hamburger = document.querySelector(".Hamburger");
 const navMenu = document.querySelector(".nav-menu");
 // title text container and child element
 const container = document.querySelector(".container");
-var childTitle = container.querySelector(".title") 
+var childTitle = container.querySelector(".title")
 
 
-
+// hamburger event listener
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active")
     navMenu.classList.toggle("active")
@@ -41,25 +41,19 @@ document.addEventListener('contextmenu', function (e) {
 
 //   title color change after 1 second
 function randomColorGenerator() {
-    const red = Math.floor(Math.random()*256);
-    const green = Math.floor(Math.random()*256);
-    const blue = Math.floor(Math.random()*256);
-    
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
     const randomColor = `rgb(${red},${green},${blue})`;
-    
-
-
     return randomColor
 }
-function randomTitleColor(){
-    
-    childTitle.style.color=randomColorGenerator();
-    
+function randomTitleColor() {
+    childTitle.style.color = randomColorGenerator();
 }
-setInterval(randomTitleColor,2000)
+setInterval(randomTitleColor, 2000)
 
 
-    
 
-     
-    
+
+
+
