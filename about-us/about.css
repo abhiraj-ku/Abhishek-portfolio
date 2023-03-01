@@ -57,9 +57,10 @@ header {
     font-size: 2.5rem;
     color: var(--primary-color);
 }
-span{
-    color:#00fd93;
-  
+
+span {
+    color: #00fd93;
+
 }
 
 /* navigation menu ul tag */
@@ -187,18 +188,33 @@ a {
         z-index: 999;
         opacity: 0.7;
     }
-    .nav-branding{
+
+    .nav-branding {
         font-size: 1.5rem;
     }
-    .right{
+
+    .right {
         flex: 0 100%;
     }
-    .faq{
-       flex: 0 50%;
-       margin: 10px;
+
+    .faq {
+        flex: 0 50%;
+        margin: 10px;
     }
+    .achievements{
+       min-width: 300px;
+       font-size: 18px;
+       
+        
+    }
+    .achievements img{
+        width: 350px;
+     
+
+    } 
 
 }
+
 /* main section about me starts here */
 
 main {
@@ -223,27 +239,30 @@ main {
 
 
 }
+
 /* added animation for slide in effect on the brief about us section  */
 @keyframes slideLeft {
     from {
-        transform:translateX(-600px)
-
+        transform: translateX(-600px)
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
-    
+
 }
+
 @keyframes slideRight {
     from {
-        transform:translateX(800px)
-
+        transform: translateX(800px)
     }
-    to{
+
+    to {
         transform: translateX(0);
     }
-    
+
 }
+
 /* left section with profil img */
 .left {
     flex-basis: 45%;
@@ -252,6 +271,7 @@ main {
     animation: slideLeft 1s ease-in 1s 1 normal both;
 
 }
+
 /* .button{
     border: none;
     border-radius: 12px;
@@ -280,9 +300,10 @@ main {
     padding: 10px;
 }
 
-.know{
+.know {
     animation: bounce 2s ease-in 1s infinite;
 }
+
 /* social links icons  */
 .social-links {
     display: flex;
@@ -336,10 +357,11 @@ main {
 .profile-pic {
     border-radius: 20px;
 }
+
 /* faq section */
-section{
-   
-    margin:0 auto;
+section {
+
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -348,61 +370,96 @@ section{
     margin: 20px;
     border-radius: 10px;
 }
-.title{
+
+.title {
     font-size: 3rem;
     margin: 2rem 0;
     color: var(--secondary-color);
 
 }
-.faq{
+
+.faq {
     max-width: 900px;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     border-bottom: 2px solid #fff;
     cursor: pointer;
 }
-.question{
+
+.question {
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-items: center;
-    
-    color:#00acee;
+
+    color: #000000;
 }
-.question h3{
+
+.question h3 {
     font-size: 1.6rem;
 }
-.answer{
+
+.answer {
     max-height: 0;
     overflow: hidden;
-    transition:max-height 0.6s ease;
+    transition: max-height 0.6s ease;
     align-items: center;
     color: var(--secondary-color);
-    
+
 }
-.answer p{
+
+.answer p {
     padding-top: 1rem;
     line-height: 1.6;
     font-size: 1.4rem;
 }
-.faq.active .answer{
+
+.faq.active .answer {
     max-height: 300px;
 
 }
-.faq.active svg{
+
+.faq.active svg {
     transform: rotate(180deg);
 }
-svg{
+
+svg {
 
     transition: transform 0.5s ease-in;
     text-align: center;
 }
-span{
-    color:#00fd93;;
+
+span {
+    color: #00fd93;
+    ;
     font-weight: 700;
+
+}
+.achievements{
+    margin-top: 50px;
     
 }
-/* .mwl{
+.achievements h3{
+    text-align: center;
+    font-size: 36px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+.images{
+    background-color: #00fd93;
+    padding: 25px;
+    
+}
+/* footer */
+footer {
+    /* color: #737373; */
+    font-family: "Comfortaa", cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
     align-items: center;
-    width: 8rem;
-} */
+    padding: 2rem;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    margin-top: 100px;
+}

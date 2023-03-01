@@ -284,3 +284,17 @@ a {
     font-size: 19px;
     font-family: "poppins";
 }
+
+/* footer */
+footer {
+    /* color: #737373; */
+    font-family: "Comfortaa", cursive;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+    padding: 2rem;
+    background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+    margin-top: 100px;
+}
