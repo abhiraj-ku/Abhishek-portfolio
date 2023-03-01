@@ -57,6 +57,10 @@ header {
     font-size: 2.5rem;
     color: var(--primary-color);
 }
+span{
+    color:#00fd93;
+  
+}
 
 /* navigation menu ul tag */
 .nav-menu {
@@ -182,6 +186,9 @@ a {
         left: 0;
         z-index: 999;
         opacity: 0.7;
+    }
+    .nav-branding{
+        font-size: 1.5rem;
     }
     .right{
         flex: 0 100%;
@@ -391,11 +398,11 @@ svg{
     text-align: center;
 }
 span{
-    color: rgb(223, 6, 6);
-    font-weight: 800;
+    color:#00fd93;;
+    font-weight: 700;
     
 }
-.mwl{
+/* .mwl{
     align-items: center;
     width: 8rem;
-}
+} */
