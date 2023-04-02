@@ -26,8 +26,13 @@ header {
 }
 /* title logo of the site */
 .nav-branding {
-    font-size: 2.5rem;
+    font-size: 2.9rem;
     color: var(--primary-color);
+    font-weight: 700;
+}
+span{
+    color:#00fd93;
+  
 }
 /* navigation menu ul tag */
 .nav-menu {
@@ -145,6 +150,9 @@ a {
 
     .nav-menu.active {
         left: 0;
+    }
+        .nav-branding{
+        font-size: 1.5rem;
     }
 
 }
